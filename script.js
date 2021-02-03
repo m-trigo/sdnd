@@ -2,13 +2,15 @@ let headerFonts = [
     'Cabin Sketch',
     'Permanent Marker',
     'Cinzel Decorative',
-    'Architects Daughter',
+    'IM Fell English',
+    'IM Fell English SC'
 ];
 
 let bodyFonts = [
     'Raleway',
     'Montserrat',
     'Open Sans',
+    'Quicksand',
 ];
 
 let hideNav = false;
