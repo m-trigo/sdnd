@@ -6,8 +6,8 @@ let headerFonts = [
 ];
 
 let bodyFonts = [
-    'Montserrat',
     'Raleway',
+    'Montserrat',
     'Open Sans',
 ];
 
