@@ -1,0 +1,82 @@
+/* Header Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+/* Body Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+    background: #feffd5;
+    border: 2px groove black;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+body {
+    font-size: large;
+    width: 60%;
+    margin: auto;
+    background: #feffd5;
+    color: #3c361b;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.selection {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+table {
+    width: 84%;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px inset #3c361b;
+    border-radius: 2px;
+    text-align: center;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+table th:first-child {
+    text-align: left;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+table th:last-child {
+    text-align: right;
+}
+
+table thead {
+    background: #887f69;
+    color: #feffd5;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color:#eaebd5;
+}
