@@ -7,13 +7,13 @@ let headerFonts = [
 ];
 
 let bodyFonts = [
-    'Raleway',
     'Montserrat',
-    'Open Sans',
     'Quicksand',
+    'Raleway',
+    'Open Sans'
 ];
 
-let hideNav = false;
+let hideNav = true;
 function main() {
 
     document.onkeydown = e => {
@@ -22,6 +22,7 @@ function main() {
             document.getElementById('nav').hidden = hideNav;
         }
     }
+
     let clicked = false;
     headerFonts.forEach(headerFont => {
         let div = document.getElementById('header-font-selection');
