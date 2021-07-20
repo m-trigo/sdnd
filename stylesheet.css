@@ -25,7 +25,7 @@ nav {
 }
 
 body {
-    font-size: large;
+    font-size: 1rem;
     width: 60%;
     margin: auto;
     background: #feffd5;
@@ -34,7 +34,6 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 2em;
 }
 
 a {
@@ -48,8 +47,11 @@ a {
 }
 
 table {
-    width: 84%;
     margin: auto;
+    overflow: auto;
+    max-width: 100%;
+    overflow-x:auto;
+    overflow-y:auto;
 }
 
 th, td {
@@ -82,4 +84,33 @@ table thead {
 
 table tbody tr:nth-of-type(even) {
     background-color:#eaebd5;
+}
+
+img {
+    width: 40%;
+}
+
+@media screen and (max-width : 1200px) {
+    body {
+        font-size: 2rem;
+        width: 92%;
+        background: #feffd5;
+        color: #3c361b;
+    }
+
+    table {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    h2 {
+        margin-top: 4rem;
+    }
+
+    p {
+        margin-top: 2rem;
+    }
 }

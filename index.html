@@ -8,6 +8,7 @@
 </head>
 
 <body id='body' onload="main();">
+
     <nav id='nav' hidden="true">
         <div id='header-font-selection' style='margin-bottom: 1em'>
             <span class='selection' style='font-family: Open Sans'><b>Header Font:</b></span>
@@ -16,261 +17,373 @@
             <span class='selection' style='font-family: Open Sans'><b>Body Font:</b></span>
         </div>
     </nav>
-    <h1 style='margin-top: 2em'>Some Dungeons, No Dragons</h1>
-    <h1><img style='width: 40%' src="./imgs/claymore.jpg"></img></h1>
+
+    <h1>Some Dungeons, No Dragons</h1>
+    <h1><img src="./imgs/claymore.jpg"></img></h1>
+
     <h1>
         <hr />
         How To Play
         <hr />
     </h1>
-    <h2>Core Mechanic</h2>
+
+    <h2>Ability Scores</h2>
     <p>
-        In cases where the outcome of an action is uncertain, the game relies on rolls of a
-        d20, to determine success or failure. Ability checks, attack rolls, and saving throws are the three kinds of d20
-        rolls and all three work the same way:
+        PCs have three abilities: <b>Strength (STR)</b>, <b>Dexterity (DEX)</b>, and <b>Intelligence (INT)</b>.
+    </p>
+
+    <h2>Saves</h2>
+    <p>
+        If a character attempts something where the outcome is uncertain and failure has consequences, they need to make
+        a save.
     </p>
     <p>
-        Roll a d20 and add all bonuses and penalties determined by the GM. Compare the total to a target number. If the
-        total equals or exceeds the target number, the ability check, attack roll, or saving throw is a success.
-        Otherwise, it's a failure.
+        To make a save, <b>roll a d20 and add the most relevant ability's score</b>.
     </p>
-    <h2>Difficulty Class (DC)</h2>
     <p>
-        The target number is called the difficulty class or DC. The DC is a measure of how hard the task is to
-        accomplish successfully and it’s determined differently for each type of roll.
+        If the <b>total is at least 10</b>, the character succeeds. If not, they fail.
     </p>
+
     <h2>Advantage and Disadvantage</h2>
     <p>
-        Sometimes an ability check, attack roll, or saving throw is modified by
-        special situations called advantage and disadvantage. Advantage reflects the positive circumstances surrounding
-        a d20 roll, while disadvantage reflects the opposite
+        If there are factors or abilities that make the save significantly easier or harder, the roll has either
+        advantage or disadvantage.
     </p>
     <p>
-        When you have either advantage or disadvantage, you roll a second d20 when you make the roll. Use the higher of
-        the two rolls if you have advantage, and use the lower roll if you have disadvantage.
+        If a roll has advantage, roll 2d20 and use the better of the two dice.
     </p>
     <p>
-        If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don't roll
-        more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one
-        additional d20. If circumstances cause a roll to have both advantage and disadvantage, you are considered to
-        have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and
-        only one grants advantage or vice versa. In such a situation, you have neither advantage or disadvantage.
-    </p>
-    <p>
-        You usually gain advantage or disadvantage through the use of special abilities, actions, but the GM can also
-        decide that circumstances influence a roll in one direction or the other and grant advantage or impose
-        disadvantage as a result.
-    </p>
-    <h2>Round Down</h2>
-    <p>
-        Whenever you divide a number in the game, round down if you end up with a fraction, even if
-        the fraction is one-half or greater.
+        If it has disadvantage, roll 2d20 and use the worse of the two dice.
     </p>
 
     <h1>
         <hr />
-        Armor
+        Character Resources
         <hr />
     </h1>
-    <table>
+
+    <h2>Stress</h2>
+    <p>
+        Once per save, you may re-roll d20 and take 1 stress.
+    </p>
+    <p>
+        For every 1 stress above your intelligence, you get -1 to all saves.
+    </p>
+    <p>
+        For every full day of rest in safety, halve and round down your stress.
+    </p>
+
+    <h2>Hit Points</h2>
+    <p>
+        Hit points protect you from lethal damage. Subtract hit points when you take damage.
+    </p>
+    <p>
+        If you don’t have enough hit points, subtract the leftover damage from your strength. You die on 0 or less
+        strength.
+    </p>
+    <p>
+        For every full day of rest in safety, double your hit points (minimum of 1).
+    </p>
+    <p>
+        For every full week of rest in safety, recover 1 strength.
+    </p>
+
+    <h2>Exhaustion</h2>
+    <p>
+        Characters get 1 level of exhaustion:
+    </p>
+    <p>
+        • For each consecutive day without enough sleep (6 hours)
+    </p>
+    <p>
+        • For each consecutive day without enough clean water
+    </p>
+    <p>
+        • For each day without enough food
+    </p>
+    <p>
+        • For each day with more than 8 hours of travel
+    </p>
+    <p>
+        • For a week of travel without a full day of rest
+    </p>
+
+    <br />
+
+    <table style="margin: 0">
         <thead>
             <tr>
-                <th>Armor Piece</th>
-                <th>AC Bonus</th>
-                <th>HP Bonus</th>
-                <th>Weight</th>
-                <th>Cost</th>
+                <th style="text-align: center;">Level</th>
+                <th style="text-align: left;">Effect (Cumulative)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Shield</td>
-                <td>2 (4)</td>
-                <td>5</td>
-                <td>1 st.</td>
-                <td>50 sp</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: left;">No negative effects</td>
             </tr>
             <tr>
-                <td>Gambeson</td>
-                <td>2</td>
-                <td>10</td>
-                <td>1 st.</td>
-                <td>100 sp</td>
+                <td style="text-align: center;">2</td>
+                <td style="text-align: left;">Disadvantage on all saves</td>
             </tr>
             <tr>
-                <td>Mail</td>
-                <td>4</td>
-                <td>20</td>
-                <td>2 st.</td>
-                <td>1000 sp</td>
+                <td style="text-align: center;">3</td>
+                <td style="text-align: left;">Takes double damage</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4</td>
+                <td style="text-align: left;">Travels at half speed</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5</td>
+                <td style="text-align: left;">Can’t travel. Can only crawl or walk with assistance.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: left;">Death</td>
             </tr>
         </tbody>
     </table>
-    <h2>Armor Class (AC)</h2>
+
     <p>
-        The armor you wear determines your AC and adds to your hit points. The base AC for unarmoured characters is 10.
-    </p>
-    <h2>Shields</h2>
-    <p>
-        A shield is made from wood or metal and is carried in one hand. Requires one hand to wield. While focusing
-        solely on defending, the wielder can impose disadvantage on any front facing attacks. While supported by a
-        shieldwall formation, the AC bonus is doubled against front facing attacks.
+        For each full day of rest in safety with enough food, water and sleep, recover 1 level of exhaustion
     </p>
 
-    <h2>Gambeson</h2>
+    <h2>Inventory</h2>
     <p>
-        A padded armor that consists of quilted layers of cloth and batting
+        PCs have a number of item slots equal to 10.
+    </p>
+    <p>
+        Most items take up 1 slot, but particularly heavy or bulky items may take up more slots.
+    </p>
+    <p>
+        Groups of small, identical items may be bundled into the same slot.
+    </p>
+    <p>
+        As a general guideline, a slot holds around 5 pounds of weight. A slot can hold 100 coins.
     </p>
 
-    <h2>Mail</h2>
-    <p>
-        Armour made of interlocking metal rings. Should be worn on top of a gambeson to prevent chafing and to cushion
-        the impact of blows. Imposes disadvantages to swimming.
-    </p>
+    <div style="display: none;">
 
-    <h2>Donning Time</h2>
-    <p>
-        It takes 1 minute to don or doff mail or gambeson. It takes 2 minutes to don or donoff both. Being assisted
-        halves the time it takes to don or donoff.
-    </p>
+        <h1>
+            <hr />
+            Armor
+            <hr />
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Armor Piece</th>
+                    <th>AC Bonus</th>
+                    <th>HP Bonus</th>
+                    <th>Weight</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shield</td>
+                    <td>2 (4)</td>
+                    <td>5</td>
+                    <td>1 st.</td>
+                    <td>50 sp</td>
+                </tr>
+                <tr>
+                    <td>Gambeson</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>1 st.</td>
+                    <td>100 sp</td>
+                </tr>
+                <tr>
+                    <td>Mail</td>
+                    <td>4</td>
+                    <td>20</td>
+                    <td>2 st.</td>
+                    <td>1000 sp</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Armor Class (AC)</h2>
+        <p>
+            The armor you wear determines your AC and adds to your hit points. The base AC for unarmoured characters is
+            10.
+        </p>
+        <h2>Shields</h2>
+        <p>
+            A shield is made from wood or metal and is carried in one hand. Requires one hand to wield. While focusing
+            solely on defending, the wielder can impose disadvantage on any front facing attacks. While supported by a
+            shieldwall formation, the AC bonus is doubled against front facing attacks.
+        </p>
 
-    <h1>
-        <hr />
-        Weapons
-        <hr />
-    </h1>
-    <div style='width: 100%; text-align: center;'>
-        <img style='width: 30%' src="./imgs/slinger.png"></img>
+        <h2>Gambeson</h2>
+        <p>
+            A padded armor that consists of quilted layers of cloth and batting
+        </p>
+
+        <h2>Mail</h2>
+        <p>
+            Armour made of interlocking metal rings. Should be worn on top of a gambeson to prevent chafing and to
+            cushion
+            the impact of blows. Imposes disadvantages to swimming.
+        </p>
+
+        <h2>Donning Time</h2>
+        <p>
+            It takes 1 minute to don or doff mail or gambeson. It takes 2 minutes to don or donoff both. Being assisted
+            halves the time it takes to don or donoff.
+        </p>
+
+        <h1>
+            <hr />
+            Weapons
+            <hr />
+        </h1>
+        <div style='width: 100%; text-align: center;'>
+            <img style='width: 30%' src="./imgs/slinger.png"></img>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Weapon Type</th>
+                    <th>Properties</th>
+                    <th>Damage</th>
+                    <th>Weight</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daggers and Throwing Axes</td>
+                    <td style="text-align: left;">Finesse, Thrown (20/60)</td>
+                    <td>1d4</td>
+                    <td>¼ st.</td>
+                    <td>20 sp</td>
+                </tr>
+                <tr>
+                    <td>Javelins</td>
+                    <td style="text-align: left;">Thrown (60/120)</td>
+                    <td>1d6</td>
+                    <td>1 st.</td>
+                    <td>5 sp</td>
+                </tr>
+                <tr>
+                    <td>Spears</td>
+                    <td style="text-align: left;">Thrown (20/60), Versatile (2d4), Long</td>
+                    <td>1d6</td>
+                    <td>2 st.</td>
+                    <td>10 sp</td>
+                </tr>
+                <tr>
+                    <td>Short Swords and Short Axes</td>
+                    <td style="text-align: left;">Finesse</td>
+                    <td>1d6</td>
+                    <td>1 st.</td>
+                    <td>100 sp</td>
+                </tr>
+                <tr>
+                    <td>Long Swords and Long Axes</td>
+                    <td style="text-align: left;">Versatile (2d6)</td>
+                    <td>1d8</td>
+                    <td>2 st.</td>
+                    <td>150 sp</td>
+                </tr>
+                <tr>
+                    <td>Slings</td>
+                    <td style="text-align: left;">Range (60/120)</td>
+                    <td>1d6</td>
+                    <td>-</td>
+                    <td>2 sp</td>
+                </tr>
+                <tr>
+                    <td>Bows</td>
+                    <td style="text-align: left;">Range (80/320), Two-handed</td>
+                    <td>2d6</td>
+                    <td>2 st.</td>
+                    <td>200 sp</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Melee</h2>
+        <p>
+            Melee attacks against targets without a melee weapon or equivalent to threaten the attacker have advantage.
+            This
+            applies most commonly against targets with ranged weapons such as bows or slings.
+        </p>
+
+        <h2>Range</h2>
+        <p>
+            A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown
+            property. The range lists two numbers. The first is the weapon's normal range in feet, and the second
+            indicates
+            the weapon's long range
+        </p>
+        <p>
+            When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a
+            target
+            beyond the weapon's long range.
+        </p>
+
+        <h2>Thrown</h2>
+        <p>
+            If a weapon has the thrown property, you can throw the weapon to make a ranged attack. You can attempt to
+            throw
+            items (such as a bottle of acid) up to 20th by making a ranged attack roll against the target.
+        </p>
+
+        <h2>Damage Rolls</h2>
+        <p>
+            You roll the damage die or dice, add any modifiers, and apply the damage to your target. Unarmed strikes
+            deal 1
+            + your Strength modifier in damage.
+        </p>
+        <p>
+            Some other items that are not weapons also have damage rolls, as listed in the item’s description.
+        </p>
+
+        <h2>Finesse</h2>
+        <p>
+            Allows you to exploit a foe's distraction or weak spot, dealing extra 2d6 damage to one creature you hit
+            with an
+            attack if you have advantage on the attack roll.
+        </p>
+
+        <h2>Versatile</h2>
+        <p>
+            This weapon can be used with one or two hands, dealing more damage when using two hands (two handed damage
+            in
+            parenthesis).
+        </p>
+
+        <h2>Long</h2>
+        <p>
+            Offers double the melee range of other weapons and can melee attack from behind shieldwall formations.
+            However,
+            due to its size, it can’t be easily carried without one hand and, while carried this way, imposes
+            disadvantage
+            on ability checks that rely on both hands like swimming and climbing.
+        </p>
+
+        <h2>Free Hand</h2>
+        <p>
+            When using a melee weapon in only one hand while having no weapon or shield in the other hand, you can use
+            your
+            Dexterity, instead of your Strength modifier, for the attack roll.
+        </p>
+
+        <h2>Two-Handed</h2>
+        <p>
+            This weapon requires two hands when you attack with it.
+        </p>
+
+        <h2>Improvised Weapons</h2>
+        <p>
+            Sometimes characters don't have their weapons and have to attack with whatever is at hand. An object that
+            can be
+            used to hurt but bears no resemblance to a weapon deals 1d4 damage
+        </p>
+
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Weapon Type</th>
-                <th>Properties</th>
-                <th>Damage</th>
-                <th>Weight</th>
-                <th>Cost</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Daggers and Throwing Axes</td>
-                <td style="text-align: left;">Finesse, Thrown (20/60)</td>
-                <td>1d4</td>
-                <td>¼ st.</td>
-                <td>20 sp</td>
-            </tr>
-            <tr>
-                <td>Javelins</td>
-                <td style="text-align: left;">Thrown (60/120)</td>
-                <td>1d6</td>
-                <td>1 st.</td>
-                <td>5 sp</td>
-            </tr>
-            <tr>
-                <td>Spears</td>
-                <td style="text-align: left;">Thrown (20/60), Versatile (2d4), Long</td>
-                <td>1d6</td>
-                <td>2 st.</td>
-                <td>10 sp</td>
-            </tr>
-            <tr>
-                <td>Short Swords and Short Axes</td>
-                <td style="text-align: left;">Finesse</td>
-                <td>1d6</td>
-                <td>1 st.</td>
-                <td>100 sp</td>
-            </tr>
-            <tr>
-                <td>Long Swords and Long Axes</td>
-                <td style="text-align: left;">Versatile (2d6)</td>
-                <td>1d8</td>
-                <td>2 st.</td>
-                <td>150 sp</td>
-            </tr>
-            <tr>
-                <td>Slings</td>
-                <td style="text-align: left;">Range (60/120)</td>
-                <td>1d6</td>
-                <td>-</td>
-                <td>2 sp</td>
-            </tr>
-            <tr>
-                <td>Bows</td>
-                <td style="text-align: left;">Range (80/320), Two-handed</td>
-                <td>2d6</td>
-                <td>2 st.</td>
-                <td>200 sp</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Melee</h2>
-    <p>
-        Melee attacks against targets without a melee weapon or equivalent to threaten the attacker have advantage. This
-        applies most commonly against targets with ranged weapons such as bows or slings.
-    </p>
-
-    <h2>Range</h2>
-    <p>
-        A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown
-        property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates
-        the weapon's long range
-    </p>
-    <p>
-        When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target
-        beyond the weapon's long range.
-    </p>
-
-    <h2>Thrown</h2>
-    <p>
-        If a weapon has the thrown property, you can throw the weapon to make a ranged attack. You can attempt to throw
-        items (such as a bottle of acid) up to 20th by making a ranged attack roll against the target.
-    </p>
-
-    <h2>Damage Rolls</h2>
-    <p>
-        You roll the damage die or dice, add any modifiers, and apply the damage to your target. Unarmed strikes deal 1
-        + your Strength modifier in damage.
-    </p>
-    <p>
-        Some other items that are not weapons also have damage rolls, as listed in the item’s description.
-    </p>
-
-    <h2>Finesse</h2>
-    <p>
-        Allows you to exploit a foe's distraction or weak spot, dealing extra 2d6 damage to one creature you hit with an
-        attack if you have advantage on the attack roll.
-    </p>
-
-    <h2>Versatile</h2>
-    <p>
-        This weapon can be used with one or two hands, dealing more damage when using two hands (two handed damage in
-        parenthesis).
-    </p>
-
-    <h2>Long</h2>
-    <p>
-        Offers double the melee range of other weapons and can melee attack from behind shieldwall formations. However,
-        due to its size, it can’t be easily carried without one hand and, while carried this way, imposes disadvantage
-        on ability checks that rely on both hands like swimming and climbing.
-    </p>
-
-    <h2>Free Hand</h2>
-    <p>
-        When using a melee weapon in only one hand while having no weapon or shield in the other hand, you can use your
-        Dexterity, instead of your Strength modifier, for the attack roll.
-    </p>
-
-    <h2>Two-Handed</h2>
-    <p>
-        This weapon requires two hands when you attack with it.
-    </p>
-
-    <h2>Improvised Weapons</h2>
-    <p>
-        Sometimes characters don't have their weapons and have to attack with whatever is at hand. An object that can be
-        used to hurt but bears no resemblance to a weapon deals 1d4 damage
-    </p>
 
 </body>
 
