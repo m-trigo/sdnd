@@ -90,7 +90,7 @@ img {
     width: 40%;
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 480px) {
     body {
         font-size: 2rem;
         width: 92%;
