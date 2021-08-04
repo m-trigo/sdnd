@@ -47,9 +47,9 @@ a {
 }
 
 table {
+    width: 100%;
     margin: auto;
     overflow: auto;
-    max-width: 100%;
     overflow-x:auto;
     overflow-y:auto;
 }

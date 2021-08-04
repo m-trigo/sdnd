@@ -37,7 +37,7 @@
 
     <h2>Ability Scores</h2>
     <p>
-        PCs have three abilities: <b>Strength (STR)</b>, <b>Dexterity (DEX)</b>, and <b>Intelligence (INT)</b>.
+        PCs have three abilities: <b>Strength (STR)</b>, <b>Dexterity (DEX)</b>, and <b>Constitution (CON)</b>.
     </p>
 
     <h2>Saves</h2>
@@ -86,25 +86,28 @@
         Once per save, you may re-roll d20 and take 1 stress.
     </p>
     <p>
-        For every 1 stress above your intelligence, you get -1 to all saves.
+        For every point of stress above your constitution, you get -1 to all saves.
     </p>
     <p>
-        For every full day of rest in safety, halve and round down your stress.
+        For every full day of rest, halve and round down your stress.
     </p>
 
     <h2>Hit Points</h2>
     <p>
-        Hit points protect you from lethal damage. Subtract hit points when you take damage.
+        Hit points protect you from lethal damage. <b>Your start the game with 6 maximum hit points.</b>
     </p>
     <p>
-        If you don’t have enough hit points, subtract the leftover damage from your strength. You die on 0 or less
-        strength.
+        Subtract from your hit points when you take damage.
+        If you don’t have enough hit points, subtract the leftover damage from your all your ability scores.
     </p>
     <p>
-        For every full day of rest in safety, double your hit points (minimum of 1).
+        You <b>die</b> on 0 or less <b>constitution</b>.
     </p>
     <p>
-        For every full week of rest in safety, recover 1 strength.
+        For every full day of rest, double your hit points (minimum of 1).
+    </p>
+    <p>
+        For every full week of rest, recover 1 from each ability score.
     </p>
 
     <h2>Exhaustion</h2>
@@ -124,14 +127,10 @@
         <b>-</b> For a week of travel without a full day of rest
     </p>
 
-    <br />
-
-    <table style="margin: 0">
+    <table>
         <thead>
-            <tr>
-                <th style="text-align: center;">Level</th>
-                <th style="text-align: left;">Effect (Cumulative)</th>
-            </tr>
+            <th style="text-align: center;">Level</th>
+            <th style="text-align: left;">Effect (Cumulative)</th>
         </thead>
         <tbody>
             <tr>
@@ -165,7 +164,7 @@
         Other conditions like encumberance and forced marches also cause exhaustion.
     </p>
     <p>
-        For each full day of rest in safety with enough food, water and sleep, recover 1 level of exhaustion
+        For each full day of rest with enough food, water and sleep, recover 1 level of exhaustion
     </p>
 
     <h2>Inventory</h2>
@@ -180,7 +179,7 @@
         Most items take up 1 stone worth of capacity.
     </p>
     <p>
-        Heavy or bulky items take 2 or more stones.
+        Heavy or bulky items take 2 stones.
     </p>
     <p>
         Very light ones take 1/4 stones (you can fit 4 of these in the same "slot").
@@ -214,7 +213,7 @@
     </p>
     <p>
         If you haven’t travelled the full watch, you might avoid getting exhausted.
-        To resist exhaustion, you need to make as many strength saves as extra hours travelled and succeed on every
+        To resist exhaustion, you need to make as many constitution saves as extra hours travelled and succeed on every
         single one.
     </p>
 
@@ -321,27 +320,25 @@
     <p>
         Roll 2d6 for the severity. The GM rolls in secret for the actual disease and its effects.
     </p>
-    <table style="margin: 0;">
+    <table>
         <thead>
-            <tr>
-                <th style="text-align: center;">Total</th>
-                <th style="text-align: left;">Severity</th>
-                <th style="text-align: left;">Duration</th>
-            </tr>
+            <th style="text-align: left;">Total</th>
+            <th style="text-align: left;">Severity</th>
+            <th style="text-align: left;">Duration</th>
         </thead>
         <tbody>
             <tr>
-                <td style="text-align: center;">4 or less</td>
+                <td style="text-align: left;">4 or less</td>
                 <td style="text-align: left;">Deadly</td>
                 <td style="text-align: left;">Requires treatment</td>
             </tr>
             <tr>
-                <td style="text-align: center;">5 to 9</td>
+                <td style="text-align: left;">5 to 9</td>
                 <td style="text-align: left;">Rough</td>
                 <td style="text-align: left;">Less than a week</td>
             </tr>
             <tr>
-                <td style="text-align: center;">10 or more</td>
+                <td style="text-align: left;">10 or more</td>
                 <td style="text-align: left;">Mild</td>
                 <td style="text-align: left;">One or two days</td>
             </tr>
@@ -468,224 +465,138 @@
 
     <h1>
         <hr />
-        Magic
+        Player Characters
         <hr />
     </h1>
 
-    <h2>Spells</h2>
-    <p>
-        Essentially alchemy. Magic is manifested and controlled with geometrical shapes and special materials.
-    </p>
-    <p>
-        There are three ways to cast spells: <b>cantrips</b>, <b>rituals</b>, and <b>artifacts</b>
-    </p>
-
-    <h2>Cantrips</h2>
-    <p>
-        Simple, maleable, quick, and weak spells.
-    </p>
-    <p>
-        You can tweak and modify the invocation with an intelligence save,
-        but if you fail the save, you <b>take 1d6 stress</b>.
-        The more you modify it, the harder the save.
-    </p>
-    <p>
-        To cast a cantrip, you must stand still and use both hands to draw the invocation circles in the air.
-        In combat, that means it takes your whole turn (movement + action) to cast a cantrip, without holding any weapons.
-    </p>
-
-    <h2>Rituals</h2>
-    <p>
-        Complex, inflexible, slow, and powerful spells.
-    </p>
-    <p>
-        To cast a ritual, you need at least 1 hour and 1 slot worth of components for that ritual.
-        The material components for one invocation usually cost around 10 silver and are consumed when casting.
-    </p>
-    <p>
-        The effect of the ritual lasts until you lose consciousness (usually when you go to sleep).
-        You can make making an intelligence save to make it last longer (of difficulty +1 per day).
-        If the save fails, the components are lost.
-    </p>
-    <p>
-        Only one ritual effect can be active at the same time.
-    </p>
-
-    <div style="display: none;">
-        <h2>Artifacts</h2>
-        <p>
-            Mostly passive, some are active, with spells between cantrips and rituals.
-            Anyone can use but there are saves to avoid corruption
-        </p>
-
-        <h2>Corruption</h2>
-        <p>
-            Stress on failure.
-            Your control over this source of magic is limited. This is the only save in the game you cannot re-roll at the cost of stress.
-        </p>
-    </div>
-
-    <h1>
-        <hr />
-        Character Creation
-        <hr />
-    </h1>
+    <h2>Character Creation</h2>
     <p>
         1. Roll 3d6 for each of their abilities, in order.
         The lowest of the three dice on each roll is that ability’s score.
         After you’ve finished rolling, you can swap the scores of two abilities.
     </p>
     <p>
-        2. Choose a class. Determine starting hit points, and choose one ability.
+        2. Choose a starting <b>ability</b> and a <b>background</b> that justifies it.
     </p>
     <p>
-        3. You start with 200 silver. Buy some equipment.
+        3. Buy some equipment. You start with 200 silver.
     </p>
     <p>
-        4. Choose a name for your PC, but don’t get too attached. It’s dangerous out there.
+        4. Name your character. Or don't. It’s dangerous out there.
     </p>
 
-    <h1>
-        <hr />
-        Classes
-        <hr />
-    </h1>
-
-    <h2>Experience</h2>
+    <h2>Level and Experience</h2>
+    <p>
+        You start at 1st level with 6 maximum hit points and one ability.
+    </p>
+    <p>
+        Every time you gain a level, your maximum <b>hit points increase by 6</b> and you get <b>a new ability</b>.
+    </p>
     <p>
         Every 1 silver worth of loot the you bring back from dangerous locations earns you 1 experience.
-    </p>
-    <p>
-        Every time you gain a level, your hit points increase and you get to choose a new ability from your class.
-    </p>
-    <p>
-        The experience needed to reach the next level is always 1000 x your current level
+        The experience you need to gain a level is always 1000 x your current level
     </p>
 
-    <h2>
-        Barbarian
+    <h2>Abilities</h2>
 
-    </h2>
-    <p>
-        HP: 8 per level
-    </p>
-    <p>
-        <b>Abilities</b>
-    </p>
-    <p>
-        <b>-</b> Get +8 permanent HP
-    </p>
-    <p>
-        <b>-</b> While active, adv on attacks, adv when attacked
-    </p>
-    <p>
-        <b>-</b> While active, +2 dmg dealt and taken
-    </p>
+    <table>
+        <thead>
+            <th style="text-align: left;">Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: left;">
+                    You take half damage (rounded down) when out of hit points.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Your carrying capacity is increased by 1 (2 with a backpack).
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    You can smell magic. Each type of magic has a different flavor.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    You have a loyalty animal companion that obeys simple commands and will always return when called.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    You and your nearby allies get +1 to armor class.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Pick a favorite weapon. It gives you +1 to attack and damage. Doubled if magical.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    You deal +1d6 damage on attacks with advantage.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Use 1/4 st. of healing herbs to help one character.
+                    They heal 1d6 extra hit points on their next day of rest.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Use 1/4 st. of pipeweed to help one character.
+                    They recover 1d6 extra stress on their next day of rest.
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <h2>
-        Fighter
+    <h2>Backgrounds</h2>
 
-    </h2>
-    <p>
-        HP: 8 per level
-    </p>
-    <p>
-        <b>Abilities</b>
-    </p>
-    <p>
-        <b>-</b> You get +1 AC. Allies also gain +1 AC when near you.
-    </p>
-    <p>
-        <b>-</b> In combat, spend movement: ally gets extra action.
-    </p>
-    <p>
-        <b>-</b> Favored weapon gets +1 to attack and damage. Doubled if magical.
-    </p>
+    <table>
+        <thead>
+            <th style="text-align: left;" colspan="3">Options</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: left;">
+                    Veteran
+                </td>
+                <td style="text-align: left;">
+                    Hunter
+                </td>
+                <td style="text-align: left;">
+                    Mariner
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Merchant
+                </td>
+                <td style="text-align: left;">
+                    Scoundrel
+                </td>
+                <td style="text-align: left;">
+                    Minstrel
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    Arcanist
+                </td>
+                <td style="text-align: left;">
+                    Scholar
+                </td>
+                <td style="text-align: left;">
+                    Ocultist
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <h2>
-        Ranger
-    </h2>
-    <p>
-        HP: 6 per level
-    </p>
-    <p>
-        <b>Abilities</b>
-    </p>
-    <p>
-        <b>-</b> The party doesn’t slow down at difficult terrain you’re familiar with
-    </p>
-    <p>
-        <b>-</b> Consume 1 oz Wolvesbane. Party heals 1d6 extra hit points on the next day of (even if unsafe) rest.
-    </p>
-    <p>
-        <b>-</b> You get a tiny animal companion (bird, squirel, cat, small dog, etc). The party gets adv to watching.
-        If it dies, replace this ability after 1d4 weeks.
-    </p>
-
-    <h2>
-        Rogue
-    </h2>
-    <p>
-        HP: 6 per level
-    </p>
-    <p>
-        <b>Abilities</b>
-    </p>
-    <p>
-        <b>-</b> "Flashback" on up to 4 item slots
-    </p>
-    <p>
-        <b>-</b> You do +2d6 damage vs unaware targets. Getting attacked usually makes you aware.
-    </p>
-    <p>
-        <b>-</b> Consume 1 oz Pipeweed. Party recovers 1d6 extra stress on the next day of (even if unsafe) rest.
-    </p>
-
-    <h2>Cleric</h2>
-    <p>
-        HP: 4 per level
-    </p>
-    <p>
-        <b>Cantrips</b>
-    </p>
-    <p>
-        <b>-</b> "Whisper”. Send a thought to someone you can see that is friendly to you.
-    </p>
-    <p>
-        <b>-</b> "Soothe". Touch a person or creature. It gets soothed for a little bit.
-    </p>
-    <p>
-        <b>Rituals</b>
-    </p>
-    <p>
-        <b>-</b> "Light". Enchant a small object. It emits light (bright as an oil lamp).
-    </p>
-    <p>
-        <b>-</b> "Cure". Put someone (even yourself) in deep sleep for a watch. They wake up as if they had rested for a whole day in safety.
-    </p>
-
-    <h2>Wizard</h2>
-    <p>
-        HP: 4 per level
-    </p>
-    <p>
-        <b>Cantrips</b>
-    </p>
-    <p>
-        <b>-</b> "Move". Move up to 5 lbs a short distance (~10’).
-    </p>
-    <p>
-        <b>-</b> "Ignite". Heat up something small with the palm of your hand.
-    </p>
-    <p>
-        <b>Rituals</b>
-    </p>
-    <p>
-        <b>-</b> "Sense". You smell magic. Each type of magic has a different flavor.
-    </p>
-    <p>
-        <b>-</b> "Ward". Wards a small area. You know when it’s disturbed.
-    </p>
 
     <h1>
         <hr />
@@ -694,11 +605,9 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Item</th>
-                <th>Weight</th>
-                <th>Cost</th>
-            </tr>
+            <th>Item</th>
+            <th>Weight</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
@@ -717,6 +626,11 @@
                 <td>5 s</td>
             </tr>
             <tr>
+                <td>Tent (for 1)</td>
+                <td>1 st.</td>
+                <td>25 s</td>
+            </tr>
+            <tr>
                 <td>Tent (for 2)</td>
                 <td>2 st.</td>
                 <td>50 s</td>
@@ -728,13 +642,18 @@
             </tr>
             <tr>
                 <td>Rations (1 day)</td>
-                <td>1/4 st.</td>
+                <td>1 st.</td>
                 <td>5 s</td>
             </tr>
             <tr>
                 <td>Waterskin (1 day)</td>
                 <td>1 st.</td>
                 <td>5 s</td>
+            </tr>
+            <tr>
+                <td>Healing Herbs</td>
+                <td>1 st.</td>
+                <td>100 s</td>
             </tr>
         </tbody>
     </table>
@@ -746,11 +665,9 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Item</th>
-                <th>Weight</th>
-                <th>Cost</th>
-            </tr>
+            <th>Item</th>
+            <th>Weight</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
@@ -810,7 +727,7 @@
             </tr>
             <tr>
                 <td>Mirror</td>
-                <td>1/2 st.</td>
+                <td>1/4 st.</td>
                 <td>100 s</td>
             </tr>
         </tbody>
@@ -823,36 +740,26 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Item</th>
-                <th>Cost</th>
-            </tr>
+            <th>Item</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
                 <td>Backpack</td>
                 <td>20 s</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>Scroll Case</td>
                 <td>10 s</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>Vial Case</td>
                 <td>10 s</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>Waterproof Bag</td>
                 <td>100 s</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>Waterproof Backpack</td>
                 <td>200 s</td>
@@ -867,11 +774,9 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Mount</th>
-                <th>Capacity</th>
-                <th>Cost</th>
-            </tr>
+            <th>Mount</th>
+            <th>Capacity</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
@@ -914,11 +819,9 @@
     </h1>
     <table>
         <thead>
-            <tr>
                 <th>Vessel</th>
                 <th>Capacity</th>
                 <th>Cost</th>
-            </tr>
         </thead>
         <tbody>
             <tr>
@@ -941,12 +844,10 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Item</th>
-                <th>AC Bonus</th>
-                <th>Weight</th>
-                <th>Cost</th>
-            </tr>
+            <th>Item</th>
+            <th>AC Bonus</th>
+            <th>Weight</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
@@ -1007,11 +908,9 @@
     </h1>
     <table>
         <thead>
-            <tr>
-                <th>Type</th>
-                <th>Weight</th>
-                <th>Cost</th>
-            </tr>
+            <th>Type</th>
+            <th>Weight</th>
+            <th>Cost</th>
         </thead>
         <tbody>
             <tr>
